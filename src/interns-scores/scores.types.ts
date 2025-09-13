@@ -1,5 +1,6 @@
 export interface weeklyEval {
     empId: number,
+    week: number,
     problemSolving: number,
     communication: number,
     logic: number,
