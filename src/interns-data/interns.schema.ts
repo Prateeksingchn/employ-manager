@@ -20,7 +20,15 @@ class InternSchema {
 
     getAllInternsFullData() {
         for (const { name, username, track, mentor, empId } of InternSchema.interns) {
-            InternSchema.fullDetailsData.push({ name, username, track, mentor, empId });
+            InternSchema.fullDetailsData.push({ 
+                name, 
+                username, 
+                track, 
+                mentor, 
+                empId,
+                weeklyScores: [],
+                overallAvg: 0
+            });
         }
         return InternSchema.fullDetailsData;
     }
